@@ -55,16 +55,13 @@ body{
 }
 .container-rainy{
     position: absolute;
-    margin-top: 5rem;
+    margin-top: 4.5rem;
 }
 .container-ubication{
     margin-bottom: 4rem;
 }
 .rainy{
     font-size: 0.9rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.5rem;
-    border-radius: 2rem;
     color: #b6ffff;
 }
 .celsius-max-min{
