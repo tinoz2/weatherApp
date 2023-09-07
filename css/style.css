@@ -5,13 +5,14 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
     background-image: url('https://getwallpapers.com/wallpaper/full/0/a/0/173173.jpg');
     background-color: rgba(35, 35, 35, 0.9);
     background-blend-mode: soft-light;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    overflow: hidden;
+    min-height: 100vh;
 }
 .container{
     display: flex;
@@ -97,4 +98,9 @@ img{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 2rem;
     font-size: 1rem;
+}
+@media (max-width: 576px){
+    .container{
+        max-width: 350px;
+    }
 }
