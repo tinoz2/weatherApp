@@ -64,7 +64,7 @@ body{
 small{
     font-size: 1rem;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.4rem;
+    padding: 0.6rem;
     border-radius: 2rem;
 }
 .celsius-max-min{
