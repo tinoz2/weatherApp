@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-image: url('https://getwallpapers.com/wallpaper/full/0/a/0/173173.jpg');
+    background-color: rgba(35, 35, 35, 0.9);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    max-width: 500px;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    transition: 0.2s ease-in-out;
+}
+.container:hover{
+    border: 3px solid rgba(255, 255, 255, 1);;
+}
+.container-wrapper, .container-ubication, .container-date, .container-max-min, 
+.container-weather{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container-wrapper, .container-ubication{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.container-date{
+    justify-content: space-between;
+}
+.container-max-min{
+    margin-bottom: 2rem;
+}
+.container-weather{
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.container-rainy{
+    position: absolute;
+    margin-top: 4.5rem;
+}
+.container-ubication{
+    margin-bottom: 4rem;
+}
+small{
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.4rem;
+    border-radius: 2rem;
+}
+.celsius-max-min{
+    font-size: 1.7rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+}
+span{
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+}
+.celsius{
+    font-size: 3.5rem;
+}
+img{
+    width: 75px;
+}
+.city{
+    font-size: 1.2rem;
+}
+.city{
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+}
+.date, .copy, .symbol{
+    padding: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    font-size: 1rem;
+}
