@@ -51,20 +51,21 @@ body{
     margin-bottom: 1rem;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 3rem;
 }
 .container-rainy{
     position: absolute;
-    margin-top: 4.5rem;
+    margin-top: 5rem;
 }
 .container-ubication{
     margin-bottom: 4rem;
 }
-small{
-    font-size: 1rem;
+.rainy{
+    font-size: 0.9rem;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.6rem;
+    padding: 0.5rem;
     border-radius: 2rem;
+    color: #b6ffff;
 }
 .celsius-max-min{
     font-size: 1.7rem;
@@ -92,7 +93,7 @@ img{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 2rem;
 }
-.date, .copy, .symbol{
+.date, .copy{
     padding: 0.75rem;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 2rem;
