@@ -71,10 +71,6 @@ body{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 2rem;
 }
-span{
-    font-size: 1rem;
-    color: rgb(200, 200, 200);
-}
 .celsius{
     font-size: 3.5rem;
 }
@@ -82,13 +78,17 @@ img{
     width: 75px;
 }
 .city{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .city{
     padding: 1rem;
     margin: 0.5rem;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 2rem;
+}
+.city2{
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 .date, .copy{
     padding: 0.75rem;
