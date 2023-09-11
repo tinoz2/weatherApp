@@ -3,13 +3,14 @@ const fetchData = position => {
     const {latitude, longitude} = position.coords;
     fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
         .then(response => response.json())
-        .then(data => setWeatherData(data))
-};
+        .then(data => setWeatherData(data));
+}
 
 
 const setWeatherData = data => {
     const roundTemperature = temperature => Math.round(temperature);
 
+    console.log(data)
     const weatherData = {
         location: data.name,
         max: roundTemperature(data.main.temp_max) + "°C max",
