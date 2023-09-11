@@ -21,6 +21,30 @@ const setWeatherData = data => {
         date: getDate(),
     }
 
+    const weatherIcon = document.getElementById("img")
+    switch (weatherData.rainy.toLowerCase()){
+        case "mist":
+            weatherIcon.src = "./img/mist.svg";
+            break;
+        case "rain":
+            weatherIcon.src = "./img/rain.svg";
+            break;
+        case "clouds":
+            weatherIcon.src = "./img/clouds.svg";
+            break;
+        case "drizzle":
+            weatherIcon.src = "./img/drizzle.svg";
+            break;
+        case "thunderstorm":
+            weatherIcon.src = "./img/thunderstorm.svg";
+            break;
+        case "snow":
+            weatherIcon.src = "./img/snow.svg";
+            break;
+        default:
+            weatherIcon.src = "./img/sunny.svg"
+    };
+
     Object.keys(weatherData).forEach(key => {
         document.getElementById(key).textContent = weatherData[key];
     });
