@@ -1,10 +1,19 @@
+
 const apiKey = "5b6085adbbc70a7858501093ee40cc89"
-const fetchData = position => {
-    const {latitude, longitude} = position.coords;
-    fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
-        .then(response => response.json())
-        .then(data => setWeatherData(data));
-}
+
+const fetchData = async (position) =>{
+    try{
+        const {latitude, longitude} = position.coords
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
+        const data = await response.json()
+        setWeatherData(data)
+    }
+    catch(error){
+        console.error("Error data", error)
+    }
+};
+
+fetchData();
 
 
 const setWeatherData = data => {
