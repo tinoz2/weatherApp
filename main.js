@@ -13,13 +13,10 @@ const fetchData = async (position) =>{
     }
 };
 
-fetchData();
-
 
 const setWeatherData = data => {
     const roundTemperature = temperature => Math.round(temperature);
 
-    console.log(data)
     const weatherData = {
         location: data.name,
         max: roundTemperature(data.main.temp_max) + "°C max",
